@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Canhotos</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- font awesome icons -->
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Css -->
+  <link rel="stylesheet" href="./assets/css/index.css">
+
+</head>
+<body>
+  
+  <div class="container" id="container">
+    <div class="form-container sign-up">
+      <form onsubmit="registrar(event)">
+        <h1>Crie sua Conta</h1>
+
+        <input type="text" placeholder="Primeiro Nome">
+        <input type="text" placeholder="Ultimo Nome">
+        <input type="email" placeholder="E-mail">
+        <input type="password" placeholder="Senha">
+        <button>Enviar</button>
+      </form>
+    </div>
+      <div class="form-container sign-in">
+        <form>
+          <h1>Login</h1>
+
+          <input type="email" placeholder="E-mail">
+          <input type="password" placeholder="Senha">
+          <a href="#">Esqueceu sua senha?</a>
+          <button class="enter"><a href="dashboard.html">Entrar</a></button>
+        </form>
+      </div>
+
+      <div class="toggle-container">
+        <div class="toggle">
+          <div class="toggle-panel toggle-left">
+            <h1>Oi!</h1>
+            <p>Bem-Vindo de Volta</p>
+            <p>Você está a apenas um passo do seu DashBoard</p>
+            <p>Já tem uma conta? <br>
+              Entre agora.</p>
+              <button class="hidden" id="login">Entrar</button>
+          </div>
+          <div class="toggle-panel toggle-right">
+            <h1>Oi!</h1>
+            <p>Bem-Vindo</p>
+            <p>você está a apenas um passo do seu DashBoard</p>
+            <p>Não tem uma conta?</p>
+            <button class="hidden" id="register">Cadastre-se</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <!-- Js -->
+  <script src="./assets/js/sign.js"></script>
+
+</body>
+</html>
